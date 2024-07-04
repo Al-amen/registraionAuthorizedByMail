@@ -18,3 +18,10 @@ def rigister_attemp(request):
     diction = {"title":"Registration Page"}
     
     return render(request, 'login_app/register.html', context=diction)  
+
+def token_send(request):
+    
+    return render(request, 'login_app/token.html',context={})
+
+def success(request):
+    return render(request, 'login_app/success.html',context={})
